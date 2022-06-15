@@ -28,4 +28,4 @@ def create_app():
     return app
 
 if __name__ == '__main__':
-    create_app.run(debug = False, host = '0.0.0.0', port = 5000)
+    create_app.run(debug = False, host = '127.0.0.1', port = 5000)
