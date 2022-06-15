@@ -5,7 +5,7 @@ from pymongo import MongoClient
 def create_app():
     app = Flask(__name__)
 
-    client = MongoClient("mongodb+srv://faraaz:msdhoni07@microblog-application.pajpp.mongodb.net/test?ssl=true&ssl_cert_reqs=CERT_NONE")
+    client = MongoClient("mongodb+srv://faraaz:msdhoni07@microblog-application.pajpp.mongodb.net/test")
     app.db = client.microblog
     
     
@@ -28,4 +28,4 @@ def create_app():
     return app
 
 if __name__ == '__main__':
-    create_app.run(debug = False, host = '127.0.0.1', port = 5000)
+    create_app.run(debug = False, host = '0.0.0.0', port = 5000)
